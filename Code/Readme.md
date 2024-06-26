@@ -1,2 +1,4 @@
-#ParkingSystem.v is the main file/
-#TB.v is the testbench for the code
+## ParkingSystem.v
+### This is the main code
+## TB.v 
+### This is the testbench for the code
