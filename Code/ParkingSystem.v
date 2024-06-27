@@ -33,25 +33,27 @@ always @(hour) begin
         free_space = 500;
 end
 
-always @(negedge car_entered) begin
-    if (is_uni_car_entered) begin 
-        if (uni_is_vacated_space)
-            uni_parked_car <= uni_parked_car + 1;
+always @(negedge car_entered, negedge car_exited) begin
+    if (!car_entered) begin
+        if (is_uni_car_entered) begin
+            if (uni_is_vacated_space)
+                uni_parked_car <= uni_parked_car + 1;
+        end
+        else begin
+            if (is_vacated_space)
+                parked_car <= parked_car + 1;
+        end
     end
-    else begin 
-        if (is_vacated_space)
-            parked_car <= parked_car + 1;
-    end
-end
 
-always @(negedge car_exited) begin
-    if (is_uni_car_exited) begin 
-        if (uni_parked_car > 0)
-            uni_parked_car <= uni_parked_car - 1;
-    end
-    else begin
-        if (parked_car > 0)
-            parked_car <= parked_car - 1;
+    else if (!car_exited) begin
+        if (is_uni_car_exited) begin
+            if (uni_parked_car > 0)
+                uni_parked_car <= uni_parked_car - 1;
+        end
+        else begin
+            if (parked_car > 0)
+                parked_car <= parked_car - 1;
+        end
     end
 end
 endmodule
