@@ -67,8 +67,8 @@ Here is a screenshot of running Modelsim:
 ## Results
 1. **Testbench 1**
    
-   ![image](https://github.com/amirrs82/DSD_Compensatory/assets/119596638/b741935c-b94f-4740-9960-9aea72b5e39a)
-   ![image](https://github.com/amirrs82/DSD_Compensatory/assets/119596638/0844f9ba-43fc-4849-a7e1-faa95fce88cb)
+   ![image](https://github.com/amirrs82/DSD_Compensatory/assets/119596638/88a84dd6-604c-48f7-90be-dbdbd3f01bc8)
+   ![image](https://github.com/amirrs82/DSD_Compensatory/assets/119596638/1b578ec1-6a06-4aa0-b85c-7dcd4d904975)
 
 2. **Testbench 2**
 
