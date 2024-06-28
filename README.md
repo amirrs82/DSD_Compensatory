@@ -1,5 +1,3 @@
-# DSD_Compensatory
-
 # Parking Management System
 
 This repository contains the Verilog code for a Parking Management System. The system tracks university and non-university cars entering and exiting a parking lot, manages available spaces, and provides outputs indicating the current parking status.
